@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 footer {
   bottom: 0;
@@ -69,6 +70,7 @@ img:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 768px) {
