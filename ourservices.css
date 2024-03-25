@@ -32,15 +32,16 @@ footer {
 }
 .navigation {
   display: flex;
-  justify-content: end;
+  gap: 20px;
 }
-.navigation ul a:hover {
+.navigation li a:hover {
   font-weight: bold;
   color: rgb(229, 26, 7);
 }
-/* .navigation ul a{
-  display: block;
-} */
+.navigation li{
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
 }

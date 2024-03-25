@@ -1,0 +1,22 @@
+.navigation{
+   
+    display: flex;
+    justify-content:end;
+  
+}
+
+.navigation li a:hover{
+    font-weight: bold;
+    
+    color: rgb(229, 26, 7);
+    
+}
+.navigation li {
+    list-style-type: none;
+  
+}
+ a{
+    text-decoration: none;
+}
+
+

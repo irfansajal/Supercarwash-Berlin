@@ -1,8 +1,8 @@
 function submission(){
     Swal.fire({
-        title: 'Hello!',
+        title: 'Thanks!',
         text: 'Your application submitted successfully',
-        icon: 'success', // 'success', 'error', 'warning', 'info', 'question'
+        icon: 'success', 
         confirmButtonText: 'ok'
       });
       

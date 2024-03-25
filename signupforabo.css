@@ -14,7 +14,7 @@ footer {
     padding-bottom: 30px;
     margin-top: 20px;
 }
-.nav-main{
+.nav-main{ 
     display: flex;
     align-items: center;
     justify-content:space-around;
@@ -35,12 +35,15 @@ footer {
 .navigation{
    
     display: flex;
-    justify-content:end;
+    gap: 20px;
 }
-.navigation ul a:hover{
+.navigation li a:hover{
     font-weight: bold;
     color: rgb(229, 26, 7);
     
+}
+.navigation li {
+list-style-type: none;
 }
 /* .navigation ul a{
     display: block;

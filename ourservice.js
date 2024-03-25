@@ -3,7 +3,7 @@ function favorite(){
    Swal.fire({
     position: "top-end",
    /*  icon: "success", */
-    title: "Added 👍 ",
+    title: "Marked 👍 ",
     showConfirmButton: false,
     timer: 1000
   });

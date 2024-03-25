@@ -54,24 +54,28 @@ img{
 .navigation{
    
     display: flex;
-    justify-content:end;
+    gap:20px;
   
 }
 
-.navigation ul a:hover{
+.navigation li a:hover{
     font-weight: bold;
     color: rgb(229, 26, 7);
     
+    
+}
+.navigation  li{
+    list-style-type:none;
 }
 
-  a{
+a{
     text-decoration: none;
   } 
+
   .abo:hover{
     text-decoration: underline;
 
   } 
-  /* expriment */
  .marquee {
     overflow: hidden;
     white-space: nowrap;
