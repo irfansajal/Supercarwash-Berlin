@@ -1,40 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="test.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple project</title>
+    <link rel="stylesheet" href="test.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <header>
-        <div class="nav-main">
-          <div>
+      <nav>
+        <ul class="nav-bar">
+          <li>
             <a class="nav-sup" href="index.html">
               <h1>SuperCarwash</h1>
             </a>
-          </div>
-          <!-- navigation system -->
+          </li>
+          <input type="checkbox" id="check" />
+          <span class="menu">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="ourservice.html"> Service</a>
+            </li>
+            <li>
+              <a href="signupforabo.html"> Sign Up</a>
+            </li>
+            <li>
+              <a href="kontact.html"> Contact</a>
+            </li>
+            <li>
+              <a href="test.html">test</a></li>
+            <label for="check" class="close-menu"
+              ><i class="fas fa-times"></i
+            ></label>
+          </span>
+          <label for="check" class="open-menu"
+            ><i class="fas fa-bars"></i
+          ></label>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <div class="infos">
+          <!-- general contact infos  -->
           <div>
-            <ul class="navigation">
-              <li>
-                Home
-              </li>
-              <li>
-                <a href="ourservice.html">Our Service</a>
-              </li>
-              <li>
-                <a href="signupforabo.html"> Sign Up</a>
-              </li>
-              <li>
-                <a href="kontact.html"> Contact</a>
-              </li>
-              <li>
-                <a href="test.html">test</a>
-              </li>
-            </u>
+            <h1>Address</h1>
+            <p>walner str.00</p>
+            <p>10456,Berlin</p>
+          </div>
+          <div>
+            <h1>Contact</h1>
+            <p>+490000000</p>
+            <p>contact@carwash-berlin.com</p>
+          </div>
+          <div>
+            <h1>Openning Hours</h1>
+            <p>Everyday</p>
+            <p>24/7</p>
           </div>
         </div>
-      </header>
-</body>
+        <!-- google maps -->
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d328273.0369326582!2d13.094321911182556!3d52.50240770508189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin!5e0!3m2!1sen!2sde!4v1711012877913!5m2!1sen!2sde"
+            width="100%"
+            height="600"
+            style="border: 0"
+            allowfdivlscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <!-- linked up all the fast access of email and social media platform -->
+        <div>
+          <div class="title">
+            <h1>Connect with us on social media via the icons below</h1>
+          </div>
+          <div class="social-media">
+            <div>
+              <a href="https://support.google.com/mail/answer/56256?hl=en">
+                <img src="/icons/gmail-icon.svg" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.facebook.com/">
+                <img src="/icons/facebook-round-color-icon.svg" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/">
+                <img src="/icons/ig-instagram-icon.svg" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.twitter.com/">
+                <img src="/icons/x-social-media-black-icon.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="common">
+        <p>Supercarwash © 2024. All Rights Reserved.</p>
+      </div>
+    </footer>
+    
+  </body>
 </html>
