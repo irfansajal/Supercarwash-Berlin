@@ -57,20 +57,5 @@ confetti({
 
 
 
-/* function btn1() {
-  let canvas = document.createElement('canvas');
-  let box = document.getElementsByClassName('btn-wrap')[0]; 
-  box.appendChild(canvas); 
-  let con_btn = confetti.create(canvas); 
-  con_btn({
-    particleCount:300,
-    spread:200,
-    startVelocity:15,
-    scalar:0.9,
-    ticks:90
-  }
 
-  ).then(()=> box.removeChild(canvas))
-  
-} */
 

@@ -1,178 +1,186 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
- 
+
 body {
-    min-height: 100vh;
-    position: relative;
-    font-family: "Roboto", sans-serif;
-    
-       
-} 
-footer {
-    position: absolute;
-    bottom: 0; 
-    width: 100%;
-    background-color: #f0f0f0; 
-    text-align: center; 
-    padding:30px 00px 30px 00px;
-    margin-top: 20px;
-   
-    
-   
-} 
-
-.nav-sup{
-    color: green;
-    cursor: pointer;
-    text-shadow: 1px 1px 2px rgba(22, 11, 16, 0.447); 
-    transition: text-shadow 0.3s ease; 
-    text-decoration: none;
-
+  min-height: 100vh;
+  position: relative;
+  font-family: "Roboto", sans-serif;
 }
-.nav-sup:hover{
-    text-shadow: 2px 2px 4px rgba(20, 10, 14, 0.8); 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 30px 00px 30px 00px;
+  margin-top: 20px;
+}
+
+.nav-sup {
+  color: green;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px rgba(22, 11, 16, 0.447);
+  transition: text-shadow 0.3s ease;
+  text-decoration: none;
+}
+.nav-sup:hover {
+  text-shadow: 2px 2px 4px rgba(20, 10, 14, 0.8);
 }
 .nav-bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    position: relative;
-    background-color: #f0f0f0;
-    padding: 12px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  background-color: #f0f0f0;
+  padding: 12px 20px;
 }
 
-.menu {display: flex;}
-.menu li {padding-left: 30px;}
+.menu {
+  display: flex;
+}
+.menu li {
+  padding-left: 30px;
+}
 .menu li a {
-    display: inline-block;
-    text-decoration: none;
-    color:rgb(84, 110, 159);
-    text-align: center;
-    transition: 0.15s ease-in-out;
-    position: relative;
-    text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(84, 110, 159);
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
 }
 .menu li a::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: #f0f0f0;
-    transition: 0.15s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #f0f0f0;
+  transition: 0.15s ease-in-out;
 }
-.menu li a:hover:after {width: 100%;}
-.open-menu , .close-menu {
-    position: absolute;
-    color: blue;
-    cursor: pointer;
-    font-size: 1.5rem;
-    display: none;
+.menu li a:hover:after {
+  width: 100%;
+}
+.open-menu,
+.close-menu {
+  position: absolute;
+  color: blue;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
 }
 .open-menu {
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 }
 .close-menu {
-    top: 15px;
-    right: 20px;
+  top: 15px;
+  right: 20px;
 }
-#check {display: none;}
-@media(max-width: 768px){
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 100;
-        background-color: rgb(244, 232, 232);
-        transition: all 0.2s ease-in-out;
-    }
-    .menu li {margin-top: 40px;}
-    .menu li a {padding: 10px;}
-    .open-menu , .close-menu {display: block;}
-    #check:checked ~ .menu {right: 0;}
+#check {
+  display: none;
+}
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: rgb(244, 232, 232);
+    transition: all 0.2s ease-in-out;
+  }
+  .menu li {
+    margin-top: 40px;
+  }
+  .menu li a {
+    padding: 10px;
+  }
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
 }
 
 /* main css */
 
-.signup{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    padding:100px 00 70px 00;
-    background-color: rgb(244, 249, 247);
-    box-shadow: 0px 4px 8px rgba(95, 74, 74, 0.5);
-    margin-left: 150px;
-    margin-right: 150px;
-    border-radius: 15px;
+.signup {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  padding: 100px 00 70px 00;
+  background-color: rgb(244, 249, 247);
+  box-shadow: 0px 4px 8px rgba(95, 74, 74, 0.5);
+  margin-left: 150px;
+  margin-right: 150px;
+  border-radius: 15px;
 }
-.input-file{
-   font-weight: bold;
+.input-file {
+  font-weight: bold;
 }
 .input-file input {
-    cursor: pointer;
-    padding:10px 80px 7px 10px;
+  cursor: pointer;
+  padding: 10px 80px 7px 10px;
 }
-.input-file input:hover{
-    background: #e6e8b7;
+.input-file input:hover {
+  background: #e6e8b7;
 }
-.sec-1{
-    display: flex;
-    gap:200px;
+.sec-1 {
+  display: flex;
+  gap: 200px;
 }
-.address{
-    margin-bottom: 5px;
+.address {
+  margin-bottom: 5px;
 }
-.btn{
-    margin-top: 25px;
-    cursor: pointer;
-    background: rgb(133, 86, 186); padding: 10px 45px 10px 45px;
-    border-radius: 5px;
-    border: none;
-    color: aliceblue;
-   
+.btn {
+  margin-top: 25px;
+  cursor: pointer;
+  background: rgb(133, 86, 186);
+  padding: 10px 45px 10px 45px;
+  border-radius: 5px;
+  border: none;
+  color: aliceblue;
 }
 
-.btn:hover{
-    background: red;
+.btn:hover {
+  background: red;
 }
 
 /* responsive for the small device */
 @media screen and (max-width: 768px) {
-    .nav-main{
-        flex-direction: column;
-        justify-content:flex-start;
-        background-color: azure;
-        
-    }
-    .signup{
-        display: grid;
-        margin-left: 40px;
-        padding-top: 0px;
-        background-color: white;
-        box-shadow: none;
-    }
-    .sec-1{
-        display: grid;
-        gap: 00;
-    }
-    .btn{
-        margin-bottom: 100px;
-        
-    }
+  .nav-main {
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: azure;
+  }
+  .signup {
+    display: grid;
+    margin-left: 40px;
+    padding-top: 0px;
+    background-color: white;
+    box-shadow: none;
+  }
+  .sec-1 {
+    display: grid;
+    gap: 00;
+  }
+  .btn {
+    margin-bottom: 100px;
+  }
 }
-
-
